@@ -1,0 +1,33 @@
+AnchorPane{
+    -fx-background-color: linear-gradient(to bottom, #E9F3EF, #C7ADCE);
+}
+
+VBox{
+    -fx-background-radius: 10;
+    -fx-background-color: #F0D1D5;
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-border-color: #AE777D;
+    -fx-border-width: 5;
+}
+
+.boxButtons{
+    -fx-spacing:50;
+    -fx-alignment:center;
+}
+
+TableView{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #AE777D;
+    -fx-border-width: 5;
+}
+
+Button:hover{
+    -fx-effect: dropShadow(gaussian, rgba(0,0,0,0.5), 5, 0.5, 0, 2);
+}
+
+Button:pressed{
+    -fx-background-color: #FFAAB3;
+    -fx-text-color: white;
+}

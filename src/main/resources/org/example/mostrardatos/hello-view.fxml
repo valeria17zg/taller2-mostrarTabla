@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="655.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mostrardatos.HelloController">
+    <VBox layoutX="211.0" layoutY="20.0" prefHeight="187.0" prefWidth="255.0">
+        <HBox prefHeight="54.0" prefWidth="255.0">
+            <Label id="nameLabel" fx:id="nameLabel" text="Nombre" />
+            <TextField id="nameField" fx:id="nameField" />
+        </HBox>
+        <HBox prefHeight="51.0" prefWidth="255.0">
+            <Label id="sexLabel" fx:id="sexLabel" text="Sexo" />
+            <TextField id="sexField" fx:id="sexField" prefHeight="25.0" prefWidth="56.0" />
+        </HBox>
+        <HBox prefHeight="44.0" prefWidth="213.0">
+            <Label id="cityLabel" fx:id="cityLabel" text="Ciudad" />
+            <TextField id="cityFIeld" fx:id="cityField" prefHeight="25.0" prefWidth="77.0" />
+        </HBox>
+        <HBox prefHeight="45.0" prefWidth="255.0" styleClass="boxButtons">
+            <Button id="addButton" fx:id="addButton" mnemonicParsing="false" onAction="#onAddButton" text="Agregar" />
+            <Button id="dataButton" fx:id="dataButton" mnemonicParsing="false" onAction="#onDataButton" text="Mostrar Datos" />
+        </HBox>
+    </VBox>
+   <TableView id="dataTable" fx:id="dataTable" layoutX="137.0" layoutY="235.0" prefHeight="224.0" prefWidth="403.0">
+      <columns>
+         <TableColumn id="nameColumn" fx:id="nameColumn" prefWidth="201.0" text="Nombre" />
+         <TableColumn id="sexColumn" fx:id="sexColumn" minWidth="0.0" prefWidth="63.0" text="Sexo" />
+         <TableColumn id="cityColumn" fx:id="cityColumn" prefWidth="138.0" text="Ciudad" />
+      </columns>
+   </TableView>
+</AnchorPane>
